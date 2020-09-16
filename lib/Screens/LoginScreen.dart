@@ -39,7 +39,7 @@ class _LoginState extends State<Login> {
                 height: 20.0,
               ),
               Text(
-                "welcome back to community!",
+                "welcome back to the community!",
                 style: TextStyle(fontSize: 25),
               ),
               SizedBox(height: 35),
@@ -49,7 +49,7 @@ class _LoginState extends State<Login> {
               ),
               buildTextField("Password"),
               SizedBox(
-                height: 30,
+                height: 35,
               ),
               Container(
                 height: 55,
@@ -69,14 +69,15 @@ class _LoginState extends State<Login> {
                 ),
               ),
               SizedBox(
-                height: 25,
+                height: 40,
               ),
               Text(
                 "Forgot Password",
                 style: TextStyle(fontSize: 18),
               ),
-              //SizedBox(height: 50),
+              SizedBox(height: 160),
               Flexible(
+                fit: FlexFit.loose,
                 flex: 1,
                 child: Container(
                   child: Center(
@@ -108,6 +109,7 @@ class _LoginState extends State<Login> {
   Widget buildTextField(String hintText) {
     return TextField(
       decoration: InputDecoration(
+        contentPadding: EdgeInsets.all(15.0),
         fillColor: Colors.grey[200],
         filled: true,
         hintText: hintText,

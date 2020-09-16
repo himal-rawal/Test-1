@@ -120,6 +120,7 @@ class _SignUpState extends State<SignUp> {
   Widget buildTextField(String hintText) {
     return TextField(
       decoration: InputDecoration(
+        contentPadding: EdgeInsets.all(15.0),
         fillColor: Colors.grey[200],
         filled: true,
         hintText: hintText,
