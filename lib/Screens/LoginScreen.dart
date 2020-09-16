@@ -19,7 +19,7 @@ class _LoginState extends State<Login> {
       resizeToAvoidBottomPadding: false,
       body: Container(
         child: Padding(
-          padding: const EdgeInsets.only(top: 50, left: 12, right: 12),
+          padding: const EdgeInsets.only(top: 50, left: 18, right: 18),
           child: Column(
             children: <Widget>[
               Row(
@@ -52,19 +52,19 @@ class _LoginState extends State<Login> {
                 height: 30,
               ),
               Container(
-                height: 50,
+                height: 55,
                 width: MediaQuery.of(context).size.width / 1,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(8.0),
-                  color: Colors.green,
+                  color: Colors.green[600],
                 ),
                 child: Center(
                   child: Text(
                     "SIGN IN",
                     style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                    ),
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20),
                   ),
                 ),
               ),
@@ -92,7 +92,7 @@ class _LoginState extends State<Login> {
                         style: TextStyle(
                             fontWeight: FontWeight.bold,
                             color: Colors.green,
-                            fontSize: 20),
+                            fontSize: 23),
                       )
                     ],
                   )),
@@ -112,7 +112,7 @@ class _LoginState extends State<Login> {
         filled: true,
         hintText: hintText,
         hintStyle: TextStyle(
-          color: Colors.black,
+          color: Colors.black45,
           fontSize: 20.0,
         ),
         border: OutlineInputBorder(
