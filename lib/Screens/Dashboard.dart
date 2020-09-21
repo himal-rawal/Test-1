@@ -147,7 +147,7 @@ class _DashboardState extends State<Dashboard> {
       ),
     );
   }
-
+//we will replace this image with the output we got from  Api
   Widget categoriesContainer() {
     return Container(
       //color: Colors.blue,
